@@ -1,0 +1,159 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #0d47a1, #1976d2);
+  color: #fff;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #0d47a1;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e3f2fd;
+  transform: scale(1.05);
+}
+
+/* Section Titles */
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #0d47a1;
+}
+
+/* About Section */
+.profile-img {
+  width: 120px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Skills Section */
+.skills-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills-buttons button {
+  background: #e3f2fd;
+  border: 2px solid #1976d2;
+  color: #0d47a1;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.skills-buttons button:hover {
+  background: #1976d2;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Project Boxes - Glass Style */
+.project-box {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 40px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+}
+
+.project-box img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 3px solid #1976d2;
+  margin-bottom: 15px;
+}
+
+/* Resume Button */
+#resume a.btn {
+  background-color: #0d47a1;
+  color: #fff;
+}
+
+#resume a.btn:hover {
+  background-color: #1565c0;
+}
+
+/* Contact */
+.contact a {
+  color: #0d47a1;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0d47a1;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .skills-buttons {
+    flex-direction: column;
+  }
+}
